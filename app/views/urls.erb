@@ -1,0 +1,13 @@
+<div>
+  <h1>Welcome to bit.lier =D</h1>
+
+  <p><a href="/urls/new">Shorten a new link!</a></p>
+
+  <% @urls.each do |url| %>
+  <%= url.id %>
+  <a href="/urls/<%= url.short %>"><%= url.long %></a>
+  Link: 
+  <br>
+  <% end %>
+
+</div>
